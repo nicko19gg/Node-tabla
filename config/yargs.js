@@ -1,4 +1,4 @@
-const argv =require('yargs')
+const argv = require('yargs')
 
 .option('n',{
     alias: 'numero',

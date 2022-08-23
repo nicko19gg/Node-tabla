@@ -6,12 +6,12 @@ const crearConeccion = async (numero, listar = false, hasta =10)=>{
 try{
 
     let salida ='';
-    let consola =''
+    let consola ='';
 
 
 for ( let i =1; i <=hasta; i++){
     salida += `${numero} x ${i} = ${numero * i}\n` 
-    consola += `${numero} ${'x'.red} ${i} ${'='.yellow} ${numero * i}\n` 
+    consola += `${numero} ${'x'.blue} ${i} ${'='.rainbow} ${numero * i}\n` 
 }
 
 if(listar){
@@ -20,7 +20,7 @@ if(listar){
     console.log('tabla del '.green, colors.blue(numero) );
     console.log('==================='.green);
 
-    console.log (salida);
+    console.log (consola);
 
 }
 
